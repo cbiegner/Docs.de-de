@@ -98,6 +98,7 @@ Aktivieren Sie die Middleware in der `Startup.Configure`-Methode, um das generie
 [!code-csharp[](../tutorials/web-api-help-pages-using-swagger/samples/2.0/TodoApi.Swashbuckle/Startup2.cs?name=snippet_Configure&highlight=4,8-11)]
 
 Der obige `UseSwaggerUI`-Methodenaufruf aktiviert die [Middleware für statische Dateien](xref:fundamentals/static-files). Wenn .NET Framework oder .NET Core 1.x die Zielkomponente ist, müssen Sie Ihrem Projekt das NuGet-Paket [Microsoft.AspNetCore.StaticFiles](https://www.nuget.org/packages/Microsoft.AspNetCore.StaticFiles/) hinzufügen.
+Wenn .NET Core 2.x die Zielkomponente ist, müssen Sie Ihrem Projekt das NuGet -Paket [Swashbuckle.AspNetCore.SwaggerUI] (https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/) hinzufügen.
 
 Starten Sie die App, und navigieren Sie zu `http://localhost:<port>/swagger/v1/swagger.json`. Das generierte Dokument mit der Beschreibung der Endpunkte wird entsprechend der [Swagger-Spezifikation (swagger.json)](xref:tutorials/web-api-help-pages-using-swagger#swagger-specification-swaggerjson) angezeigt.
 
